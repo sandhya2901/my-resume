@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf3f8;
+    color: #333;
+    font-size: 12px;
+}
+
+header {
+    background-color: #105c83;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #073b5c;
+    text-align: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a8e6ff;
+}
+
+.container {
+    width: 760px;
+    max-width: 95%;
+    margin: 15px auto;
+}
+
+.section {
+    background-color: white;
+    margin-bottom: 14px;
+    border: 1px solid #cbd5df;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.section-title {
+    background-color: #12658d;
+    color: white;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section-content {
+    padding: 14px;
+}
+
+h3 {
+    color: #164e68;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+h4 {
+    color: #164e68;
+    font-size: 13px;
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 5px;
+    margin: 12px 0 10px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.home-content {
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #12658d;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #073b5c;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.resume-grid > div {
+    min-width: 0;
+}
+
+.resume-grid p {
+    margin-bottom: 14px;
+}
+
+ul, ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.skills {
+    line-height: 2;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+th, td {
+    border: 1px solid #b9c8d3;
+    padding: 7px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #12658d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f5f9;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.bio-card {
+    border: 1px solid #ccd4dc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9fafb;
+    min-width: 0;
+}
+
+.bio-card h4 {
+    white-space: nowrap;
+}
+
+.bio-card ul {
+    padding-left: 17px;
+}
+
+.bio-card table {
+    margin-top: 0;
+}
+
+.bio-card td {
+    padding: 6px;
+    overflow-wrap: anywhere;
+}
+
+.bio-card td:first-child {
+    background-color: #12658d;
+    color: white;
+    font-weight: bold;
+    width: 36%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.contact-details a {
+    color: #12658d;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    border: 1px solid #c4ccd3;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 75px;
+}
+
+.contact-form button {
+    background-color: #12658d;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #073b5c;
+}
+
+#form-message {
+    color: #12658d;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #073b5c;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .resume-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-form {
+        border-left: none;
+        border-top: 2px solid #ccc;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
+}
